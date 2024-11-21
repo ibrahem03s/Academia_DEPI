@@ -1,0 +1,46 @@
+<div class="bg-light">
+  <div class="team container m-auto d-flex justify-content-between flex-wrap">
+    @for (person of team ;track $index){
+    <div class="person card shadow mb-4">
+      <div class="img h-100">
+        <img
+          class="w-100 h-100"
+          [src]="person.imgUrl"
+          [alt]="'Image ' + ($index + 1)"
+        />
+        <div class="social">
+          <a
+            class="d-block bg-black mb-3 rounded-5 text-white ps-1 pt-1"
+            href="https://web.facebook.com/"
+            ><i class="fa-brands fa-facebook me-3 p-2"></i
+          ></a>
+
+          <a
+            class="d-block bg-black mb-3 rounded-5 text-white ps-1 pt-1"
+            href="https://x.com/login=/"
+            ><i class="fa-brands fa-twitter me-3 p-2"></i
+          ></a>
+
+          <a
+            class="d-block bg-black mb-3 rounded-5 text-white ps-1 pt-1"
+            href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram me-3 p-2"></i
+          ></a>
+
+          <a
+            class="d-block bg-black rounded-5 text-white ps-1 pt-1"
+            href="https://dribbble.com/session/new"
+            ><i class="fa-brands fa-dribbble p-2"></i
+          ></a>
+        </div>
+      </div>
+      <div class="text text-center p-3">
+        <p>{{ person.name }}</p>
+        <p class="text-black-50">{{ person.job }}</p>
+      </div>
+    </div>
+    }
+  </div>
+  <!-- Counter Section -->
+  <app-counter></app-counter>
+</div>

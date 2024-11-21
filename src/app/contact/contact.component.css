@@ -1,0 +1,15 @@
+.resizable-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* resize: both; Allows resizing in both directions */
+  overflow: auto;
+  resize: none;
+}
+
+.clickable-paragraph:hover {
+  color: #131313 !important;
+  cursor: pointer;
+}

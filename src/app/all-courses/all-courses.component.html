@@ -1,0 +1,933 @@
+<app-subscribe></app-subscribe>
+
+<section style="background-color: rgb(241, 238, 238)">
+  <div class="container">
+    <div class="row d-flex justify-content-between flex-wrap">
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 mt-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Artificial Intelligence, Machine Learning &Deep Learning</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-3">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(0)"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 mt-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Artificial Intelligence, Machine Learning &Deep Learning</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-3">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(1)"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 mt-lg-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Introducing to Programming with WordPress</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-5">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(2)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Artificial Intelligence, Machine Learning &Deep Learning</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-3">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(3)"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Artificial Intelligence, Machine Learning &Deep Learning</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-3">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(4)"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Introducing to Programming with WordPress</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-5">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(5)"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Artificial Intelligence, Machine Learning &Deep Learning</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-3">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(6)"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Artificial Intelligence, Machine Learning &Deep Learning</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-3">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(7)"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 col-md-6 col-sm-10 border border-info mb-5 bg-white course-card"
+      >
+        <div class="rotating-div">
+          <div class="d-flex flex-row mt-4 boxing">
+            <div class="ms-2" style="background-color: #22c8ba; height: 120px">
+              <i
+                class="fa-brands fa-whmcs fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-react fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+              <i
+                class="fa-brands fa-python fa-2xl mt-4 ms-2"
+                style="color: #f6f8f8"
+              ></i>
+            </div>
+            <div class="ms-3">
+              <h2>Introducing to Programming with WordPress</h2>
+              <div class="d-flex flex-row mt-3">
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <i class="fa-solid fa-star mt-2" style="color: #22c8ba"></i>
+                <p>
+                  <span style="color: #22c8ba; font-size: larger">(5.0)</span>
+                </p>
+              </div>
+              <div class="d-flex flex-row">
+                <img
+                  src="assets/g1.jpg"
+                  class="rounded-circle"
+                  width="50px"
+                  height="50px"
+                />
+                <p class="mt-2 ms-2" style="font-size: larger">by John Smith</p>
+              </div>
+              <p class="clickable-paragraph" (click)="scrollToHeader()">
+                <span style="color: #22c8ba"><b>50 lectures (190 hrs)</b></span>
+              </p>
+            </div>
+          </div>
+          <div class="text-center bg-light mt-5">
+            <p style="font-size: larger; color: #22c8ba">
+              <b>$100 All Course / $15 per month</b>
+            </p>
+          </div>
+          <button
+            class="ms-5 mb-5 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="openPage()"
+          >
+            ENROLL NOW!
+          </button>
+          <button
+            class="ms-5 mb-2 w-75 border border-info clickable-button"
+            style="height: 50px; background-color: #ffffff"
+            (click)="scrollToHeader()"
+          >
+            SET TO VIEW LATER!
+          </button>
+          <div class="heart-icon text-center mb-3">
+            <i
+              class="like fa-regular fa-heart fs-1"
+              (click)="toggleLike(8)"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: rgb(241, 238, 238)">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mt-5 mb-5">
+        <h6>
+          <span style="color: #22c8ba; font-size: larger"><b>COURSES</b></span>
+        </h6>
+        <h1><b>Browse Our Online Courses</b></h1>
+      </div>
+      <div
+        class="col-lg-12 mb-5 d-flex flex-row flex-wrap justify-content-between"
+      >
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 mb-2 clickable-button bg-white text-center d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i class="fa-solid fa-computer fa-2xl" style="color: #22c8ba"></i>
+            </div>
+            <div class="mt-4"><h4>UI/UX Design Courses</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 mb-2 clickable-button bg-white text-center d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i class="fa-solid fa-palette fa-2xl" style="color: #22c8ba"></i>
+            </div>
+            <div class="mt-4"><h4>Art & Design</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 mb-2 clickable-button text-center d-flex flex-column small-card"
+          style="background-color: #22c8ba"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i class="fa-solid fa-robot fa-2xl" style="color: #f6f6f6"></i>
+            </div>
+            <div class="mt-4"><h4>Computer Sciences</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 mb-2 clickable-button bg-white text-center d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i class="fa-solid fa-timeline fa-2xl" style="color: #22c8ba"></i>
+            </div>
+            <div class="mt-4"><h4>History & Archologic</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 mb-2 clickable-button bg-white text-center d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i
+                class="fa-solid fa-window-restore fa-2xl"
+                style="color: #22c8ba"
+              ></i>
+            </div>
+            <div class="mt-4"><h4>Software Engineering</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 mb-2 clickable-button bg-white text-center d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i
+                class="fa-solid fa-circle-info fa-2xl"
+                style="color: #22c8ba"
+              ></i>
+            </div>
+            <div class="mt-4"><h4>Information Software</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-12 mb-5 d-flex flex-row mb-5 flex-wrap justify-content-between"
+      >
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 clickable-button bg-white text-center mb-2 d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i
+                class="fa-solid fa-heart-circle-plus fa-2xl"
+                style="color: #22c8ba"
+              ></i>
+            </div>
+            <div class="mt-4"><h4>Health&Fitness</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 clickable-button bg-white text-center mb-2 d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i
+                class="fa-solid fa-rectangle-ad fa-2xl"
+                style="color: #22c8ba"
+              ></i>
+            </div>
+            <div class="mt-4"><h4>Marketing</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 clickable-button bg-white text-center mb-2 d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i
+                class="fa-solid fa-wand-magic-sparkles fa-2xl"
+                style="color: #22c8ba"
+              ></i>
+            </div>
+            <div class="mt-4"><h4>Graphic Design</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 clickable-button bg-white text-center mb-2 d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i class="fa-solid fa-icons fa-2xl" style="color: #22c8ba"></i>
+            </div>
+            <div class="mt-4"><h4>Music</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 clickable-button bg-white text-center mb-2 d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i
+                class="fa-solid fa-sack-dollar fa-2xl"
+                style="color: #22c8ba"
+              ></i>
+            </div>
+            <div class="mt-4"><h4>Business Adminstration</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-4 col-sm-6 clickable-button bg-white text-center mb-2 d-flex flex-column small-card"
+          (click)="scrollToHeader()"
+        >
+          <div class="rotation-div">
+            <div class="mt-5">
+              <i
+                class="fa-regular fa-newspaper fa-2xl"
+                style="color: #22c8ba"
+              ></i>
+            </div>
+            <div class="mt-4"><h4>Web Management</h4></div>
+            <div class="mt-3 mb-5">
+              <p
+                class="bg-light w-50"
+                style="color: #22c8ba; margin-left: 52px"
+              >
+                25 Courses
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

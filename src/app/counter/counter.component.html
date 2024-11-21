@@ -1,0 +1,14 @@
+<div class="numbers text-center" id="scrolled">
+  <div
+    class="number-parent container m-auto row justify-content-between py-5"
+    [ngClass]="moveUpClass"
+  >
+    @for (number of numbers; track $index) {
+    <div class="number col-lg-3 col-md-6 col-sm-12 m-auto text-white">
+      <i [class]="number.icon"></i>
+      <span class="ms-3">{{ number.value }}</span>
+      <p class="ps-3">{{ number.text }}</p>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,39 @@
+/* *{
+    padding: 0;
+} */
+
+.email-input .form-control {
+  border: none;
+  border-bottom: 2px solid #f4f6f9;
+  border-radius: 0;
+  background-color: transparent;
+  padding-right: 40px; /* Space for the icon */
+}
+
+.email-input .telegram-icon {
+  cursor: pointer;
+  font-size: x-large;
+  color: #eef0f3;
+  background-color: transparent;
+  border: none;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-input .form-control::placeholder {
+  color: white;
+  font-size: larger;
+  opacity: 1; /* Ensures the white color is fully opaque */
+}
+
+/* ____________ */
+
+.click {
+  cursor: pointer;
+}

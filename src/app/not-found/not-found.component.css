@@ -1,0 +1,24 @@
+.layout {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.parent {
+  transform: translateY(100%);
+}
+.parent i {
+  color: #22c8ba;
+  font-size: 100px;
+}
+.parent p {
+  font-weight: bold;
+  color: #ccc;
+  font-size: 20px;
+}
+.parent button {
+  background-color: #22c8ba;
+  color: #fff;
+  font-weight: bold;
+}

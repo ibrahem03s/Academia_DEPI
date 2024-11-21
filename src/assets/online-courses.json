@@ -1,0 +1,89 @@
+{
+  "header": {
+    "titles": [
+      { "page": "Home", "title": "" },
+      { "page": "All Courses", "title": "Explore Courses" },
+      { "page": "About", "title": "About Us" },
+      { "page": "Team", "title": "Team" },
+      { "page": "Pricing", "title": "Choose The Right Plan" },
+      { "page": "Contact", "title": "Contact us" }
+    ],
+    "routers": ["home", "all-courses", "about", "team", "pricing", "contact"]
+  },
+  "team": {
+    "persons": [
+      {
+        "imgUrl": "assets/team-1.jpg",
+        "name": "Ph.D Adrian Molises",
+        "job": "Developer and Lead Instructor"
+      },
+      {
+        "imgUrl": "assets/team-2.jpg",
+        "name": "Ph.D Arthur MaGregor",
+        "job": "Developer and Lead Instructor"
+      },
+      {
+        "imgUrl": "assets/team-3.jpg",
+        "name": "Ph.D Anna Hanzen",
+        "job": "Developer and Lead Instructor"
+      },
+      {
+        "imgUrl": "assets/team-4.jpg",
+        "name": "Ph.D Brian Wooden",
+        "job": "Developer and Lead Instructor"
+      },
+      {
+        "imgUrl": "assets/team-3.jpg",
+        "name": "Ph.D Anna Hanzen",
+        "job": "Developer and Lead Instructor"
+      },
+
+      {
+        "imgUrl": "assets/team-4.jpg",
+        "name": "Ph.D Brian Wooden",
+        "job": "Developer and Lead Instructor"
+      },
+
+      {
+        "imgUrl": "assets/team-1.jpg",
+        "name": "Ph.D Adrian Molises",
+        "job": "Developer and Lead Instructor"
+      },
+      {
+        "imgUrl": "assets/team-2.jpg",
+        "name": "Ph.D Arthur MaGregor",
+        "job": "Developer and Lead Instructor"
+      }
+    ],
+    "numbers": [
+      {
+        "icon": "fa-solid fa-user-graduate",
+        "value": 3000,
+        "text": "Success Stories"
+      },
+      {
+        "icon": "fa-solid fa-user-tie",
+        "value": 320,
+        "text": "Trusted Tutors"
+      },
+      {
+        "icon": "fa-regular fa-calendar-alt",
+        "value": 1000,
+        "text": "Schedules"
+      },
+      {
+        "icon": "fa-solid fa-book-open",
+        "value": 580,
+        "text": "Courses"
+      }
+    ]
+  },
+  "user": {
+    "mail": "",
+    "password": "",
+    "name": "",
+    "phone": "",
+    "isLogin": false,
+    "certificateImage": "assets/certificate.png"
+  }
+}

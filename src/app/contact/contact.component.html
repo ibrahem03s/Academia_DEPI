@@ -1,0 +1,174 @@
+<section style="background-color: rgb(241, 238, 238)">
+  <div class="container">
+    <div class="row d-flex flex-row flex-wrap">
+      <div
+        class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-5"
+        style="background-color: white"
+      >
+        <div class="mt-5 text-center">
+          <h3><b>CONTACT US</b></h3>
+          <p class="mt-3" style="color: rgb(162, 163, 163)">
+            We're open for any suggestion or just to have a chat
+          </p>
+        </div>
+        <div class="row ms-2 justify-content-around">
+          <div class="col-3">
+            <p><b>ADDRESS: </b></p>
+            <p style="color: rgb(162, 163, 163)">
+              198 West 21th Street, Suite 721 New York NY 10016
+            </p>
+          </div>
+          <div class="col-3">
+            <p><b>Email:</b></p>
+            <p>info/oursite.com</p>
+          </div>
+          <div class="col-3">
+            <p><b>PHONE:</b></p>
+            <p>0119876254</p>
+          </div>
+        </div>
+        <form
+          [formGroup]="loginForm"
+          (ngSubmit)="submitLoginForm(loginForm)"
+          class="mt-3 ms-4"
+          style="color: rgb(162, 163, 163)"
+        >
+          <div class="row d-flex flex-row flex-wrap">
+            <div class="col-5">
+              <div>
+                <label for="exampleFormControlInput1" class="form-label"
+                  ><b>UserName</b></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  formControlName="userName"
+                />
+                <div *ngIf="loginForm.get('userName')?.errors">
+                  <p
+                    *ngIf="
+                      loginForm.get('userName')?.touched &&
+                      loginForm.get('userName')?.getError('required')
+                    "
+                    class="text-danger"
+                  >
+                    username is required
+                  </p>
+                  <p
+                    *ngIf="
+                      loginForm.get('userName')?.touched &&
+                      loginForm.get('userName')?.getError('minlength')
+                    "
+                    class="text-danger"
+                  >
+                    minimum length 3 char
+                  </p>
+                  <p
+                    *ngIf="
+                      loginForm.get('userName')?.touched &&
+                      loginForm.get('userName')?.getError('manlength')
+                    "
+                    class="text-danger"
+                  >
+                    maximum lngth is 20 char
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div>
+                <label for="exampleFormControlInput1" class="form-label"
+                  ><b>Email address </b></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                  formControlName="email"
+                />
+                <div *ngIf="loginForm.get('email')?.errors">
+                  <p
+                    *ngIf="
+                      loginForm.get('email')?.touched &&
+                      loginForm.get('email')?.getError('required')
+                    "
+                    class="text-danger"
+                  >
+                    email is required
+                  </p>
+                  <p
+                    *ngIf="
+                      loginForm.get('email')?.touched &&
+                      loginForm.get('email')?.getError('email')
+                    "
+                    class="text-danger"
+                  >
+                    This email is not valid
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 mt-3 mb-2">
+              <input
+                type="text"
+                class="input-field w-100 mb-3 form-control"
+                placeholder="Subject"
+              />
+              <textarea
+                class="resizable-textarea form-control"
+                placeholder="Create a message here"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-3">
+            <button
+              type="submit"
+              style="background-color: #22c8ba"
+              class="text-white mb-5 form-control"
+            >
+              <b>SEND MESSAGE</b>
+            </button>
+          </div>
+        </form>
+        <div class="row ms-2 mb-5">
+          <div class="col-10">
+            <h4>Follow us here</h4>
+          </div>
+
+          <div class="col-12 d-flex flex-row flex-wrap">
+            <div class="col-2">
+              <p style="color: #22c8ba" class="clickable-paragraph">
+                <b>FACEBOOK</b>
+              </p>
+            </div>
+
+            <div class="col-2">
+              <p style="color: #22c8ba" class="clickable-paragraph">
+                <b>INSTAGRAM</b>
+              </p>
+            </div>
+
+            <div class="col-2">
+              <p style="color: #22c8ba" class="clickable-paragraph">
+                <b>TWITER</b>
+              </p>
+            </div>
+
+            <div class="col-2">
+              <p style="color: #22c8ba" class="clickable-paragraph">
+                <b>DRIBBLE</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+        <img src="assets/contact1.jpg" alt="" class="w-100" />
+        <img src="assets/contact2.png" alt="" class="w-100 mt-5" />
+      </div>
+    </div>
+  </div>
+</section>

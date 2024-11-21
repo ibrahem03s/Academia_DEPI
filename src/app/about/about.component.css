@@ -1,0 +1,44 @@
+.t-color {
+  color: #22c8ba;
+}
+.off-white {
+  color: #999999;
+}
+.img {
+  background-image: url("../../assets/about.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 900px;
+}
+.hov:hover {
+  background-color: #22c8ba;
+  color: white;
+  transition: 0.4s;
+}
+.hov:hover .off-white {
+  color: white;
+  transition: 0.4s;
+}
+.hov:hover .t-color {
+  color: white;
+  transition: 0.4s;
+}
+@media screen and (max-width: 767px) {
+  .img {
+    display: none;
+  }
+  .test {
+    width: 25% !important;
+  }
+}
+/* section one */
+.fs-40 {
+  font-size: 50px;
+  color: white;
+}
+@media screen and (max-width: 991px) {
+  .test {
+    width: 50% !important;
+  }
+}

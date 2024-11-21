@@ -1,0 +1,59 @@
+.form-layout {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+@media (min-width: 767px) {
+  .container {
+    width: 60% !important;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 90% !important;
+  }
+  form {
+    padding: 15px !important;
+  }
+}
+
+.form-layout form {
+  background-color: #fff;
+  margin-top: 10%;
+  border-radius: 10px;
+  position: relative;
+}
+.container > form span.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 0 10px 0 10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0;
+}
+.form-layout form label {
+  font-size: 16px;
+}
+.form-layout form input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.form-layout form input:focus {
+  outline: none;
+}
+
+.error {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.message {
+  font-size: 12px;
+  line-height: 0.6;
+}

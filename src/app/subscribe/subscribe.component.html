@@ -1,0 +1,131 @@
+<div class="form-layout d-none w-100 h-100">
+  <div class="container">
+    <form class="p-3" #Form="ngForm" (ngSubmit)="submit(Form)">
+      <span
+        class="close btn"
+        style="background-color: #22c8ba; color: #ffffff; font-weight: bold"
+        (click)="close()"
+        >X</span
+      >
+      <div class="row justify-content-between">
+        <div class="first-name col-md-6 col-sm-12 mb-2">
+          <label class="me-2" for="first-name">First Name</label>
+          <input
+            class="w-100"
+            type="text"
+            id="first-name"
+            name="firstName"
+            placeholder="First Name"
+            ngModel
+            #firstName="ngModel"
+            required
+          />
+          @if(firstName.touched && firstName.invalid){
+          <p class="error text-danger">First Name Required</p>
+          }
+        </div>
+        <div class="last-name col-md-6 col-sm-12 mb-2">
+          <label class="me-2" for="last-name">Last Name</label>
+          <input
+            class="w-100"
+            type="text"
+            id="last-name"
+            name="lastName"
+            placeholder="Last Name"
+            ngModel
+            #lastName="ngModel"
+            required
+          />
+          @if(lastName.touched && lastName.invalid){
+          <p class="error text-danger">Last Name Required</p>
+          }
+        </div>
+      </div>
+      <div class="phone mb-2">
+        <label class="me-2" for="phone">Phone</label>
+        <input
+          class="w-100"
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="Phone"
+          ngModel
+          #phone="ngModel"
+          required
+        />
+        @if(phone.touched && phone.invalid){
+        <p class="error text-danger">Phone Required</p>
+        }
+      </div>
+      <div class="email mb-2">
+        <label class="me-2" for="email">Email</label>
+        <input
+          class="w-100"
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email"
+          ngModel
+          #email="ngModel"
+          required
+          pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
+        />
+        @if(email.touched && email.invalid){ @if(email.errors?.['required']){
+        <p class="error text-danger">Email Required</p>
+        }@else if (email.errors?.['pattern']) {
+        <p class="error text-danger">
+          Email Must Be In Form example122&#64;gmail.com
+        </p>
+        } }
+      </div>
+      <div class="row justify-content-between">
+        <div class="password col-md-6 col-sm-12 mb-2">
+          <label class="me-2" for="password1">Create Password</label>
+          <input
+            class="w-100"
+            type="password"
+            name="password1"
+            id="password1"
+            placeholder="Password"
+            ngModel
+            #pass1="ngModel"
+            required
+            minlength="8"
+          />@if(pass1.invalid && pass1.touched){
+          @if(pass1.errors?.['minlength']){
+          <p class="error text-danger">Password Must Be At Least 8 Character</p>
+          }@else {
+          <p class="error text-danger">Password Required</p>
+          } }
+        </div>
+        <div class="password col-md-6 col-sm-12 mb-2">
+          <label class="me-2" for="password2">Write Password Again</label>
+          <input
+            class="w-100"
+            type="password"
+            name="password2"
+            id="password2"
+            placeholder="Password"
+            ngModel
+            #pass2="ngModel"
+          />
+
+          @if (pass1.value != pass2.value){
+          <p class="error text-danger">Password Don't Match</p>
+          }
+        </div>
+      </div>
+      <span class="message"
+        >Your Email Will Be Used To Send You Your Payment Plan's Details</span
+      >
+      <button
+        type="submit"
+        class="ms-4 btn"
+        style="background-color: #22c8ba; color: #ffffff; font-weight: bold"
+        [disabled]="Form.invalid"
+      >
+        Sign in
+      </button>
+    </form>
+  </div>
+</div>

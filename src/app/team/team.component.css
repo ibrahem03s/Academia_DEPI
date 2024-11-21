@@ -1,0 +1,66 @@
+.team {
+  padding: 100px 0;
+}
+.team .person {
+  transform: translateY(100px);
+  opacity: 0.1;
+  transition: 1s;
+}
+.team .person .img {
+  position: relative;
+  overflow: hidden;
+}
+.team .person .img .social {
+  position: absolute;
+  background-color: transparent;
+  bottom: 10px;
+  left: 5px;
+  font-size: 18px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.team .person .img .social a {
+  width: 42px;
+  height: 42px;
+  transition: 0.3s;
+}
+
+.team .person .img .social a:hover {
+  background-color: #22c8ba !important;
+}
+
+.team .person .text {
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.team .person:hover .text {
+  background-color: #22c8ba;
+  color: white !important;
+}
+.team .person:hover .img .social {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .team .person {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) {
+  .team .person {
+    width: calc(90% / 2);
+  }
+}
+@media (min-width: 991px) {
+  .team .person {
+    width: calc(90% / 4);
+  }
+}
+
+.move-up {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
